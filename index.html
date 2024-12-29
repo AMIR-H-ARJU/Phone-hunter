@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" date-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About API</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="bg-white  mx-auto">
+        <div class="flex ">
+            <div class="  mx-auto  text-left  items-center ">
+                <h1 class="text-7xl text-center text-slate-400 p-2  bg-white font-bold">Phone zone <span
+                        class="text-4xl text-slate-300">BD</span></h1>
+                <div class="text-center ml-4 mt-4">
+                    <input id="input-value" type="text" placeholder="Search here"
+                        class="input bg-gray-500 text-white  w-full max-w-xs" />
+                    <button onclick="theSearchBar()" class="text-white btn btn-primary">Search</button>
+
+                </div>
+            </div>
+        </div>
+        <div id="spinner" class="text-center pt-10 hidden">
+            <span class="loading bg-purple-500 loading-loading loading-lg"></span>
+        </div>
+        <section>
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+                <div class="mb-5" id="modal-container">
+                    <h3 id="data-head" class="text-lg font-bold"></h3>
+                    <p id="p-id" class="py-4"></p>
+                </div>
+               
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+        </section>
+        <section class="pt-7">
+            <div id="parent" class="bg-white rounded p-20 grid grid-cols-3 gap-10 ">
+
+            </div>
+        </section>
+        <div class="text-center pb-10">
+            <button onclick="showBtnOperation()" id="show-btn"
+                class="btn-pimary bg-red-600 p-5 text-white rounded-xl hidden">Show more</button>
+        </div>
+    </main>
+
+    <main class="flex justify-center ">
+        <div class="p-5 mt-40">
+            <h2 class="text-7xl text-center font-bold">L<span class="text-red-700">oo</span>king For A Phone ?</h2>
+            <h2 class="text-6xl mt-4 font-bold">Then Search & Get Your Best Deal <span
+                    class="text-7xl text-green-700">!</span></h2>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>
